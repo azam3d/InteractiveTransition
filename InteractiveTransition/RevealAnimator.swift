@@ -53,9 +53,6 @@ extension RevealAnimator: UIViewControllerAnimatedTransitioning {
   }
 
   func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-      print(transitionType)
-      print(interactive)
-      
       let inView   = transitionContext.containerView
       let toView   = transitionContext.view(forKey: .to)!
       let fromView = transitionContext.view(forKey: .from)!
